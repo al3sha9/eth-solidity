@@ -27,6 +27,8 @@ const deploy = async () => {
 
     // Log the contract address where the contract is deployed
     console.log('Contract deployed to', result.options.address);
+    provider.engine.stop();
+
 };
 
 // Call the deploy function to initiate the deployment
